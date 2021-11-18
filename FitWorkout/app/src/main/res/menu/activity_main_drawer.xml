@@ -5,24 +5,46 @@
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/nav_switch_pt"
-            android:icon="@drawable/nav_action_switch_acc"
-            android:title="Personal Trainer"
-            app:actionLayout="@layout/switch_item"
-            app:showAsAction="always" />
 
-        <item
-            android:id="@+id/nav_encomendas"
-            android:icon="@drawable/nav_action_encomendas"
-            android:title="Encomendas" />
-        <item
-            android:id="@+id/nav_exercicios"
-            android:icon="@drawable/nav_action_exercicios"
-            android:title="Exercícios" />
-        <item
-            android:id="@+id/nav_pt"
-            android:icon="@drawable/nav_action_pt_chat"
-            android:title="Personal Trainer" />
+        <item android:title="Mudar de Conta">
+            <menu>
+                <item
+                    android:id="@+id/nav_switch_pt"
+                    android:icon="@drawable/nav_action_switch_acc"
+                    android:title="Personal Trainer"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+            </menu>
+        </item>
+
+        <item android:title="Opções">
+            <menu>
+                <item
+                    android:id="@+id/nav_encomendas"
+                    android:icon="@drawable/nav_action_encomendas"
+                    android:title="Encomendas" />
+
+                <item
+                    android:id="@+id/nav_exercicios"
+                    android:icon="@drawable/nav_action_exercicios"
+                    android:title="Exercícios" />
+
+                <item
+                    android:id="@+id/nav_pt"
+                    android:icon="@drawable/nav_action_pt_chat"
+                    android:title="Personal Trainer" />
+            </menu>
+        </item>
+        
+        <!-- TODO: Meter o item das Definições no fundo(bottom) da janela -->
+        <item android:title="Definições">
+            <menu>
+                <item
+                    android:id="@+id/nav_definicoes"
+                    android:icon="@drawable/nav_action_definicoes"
+                    android:title="Dados de Perfil" />
+            </menu>
+        </item>
+
     </group>
 </menu>
