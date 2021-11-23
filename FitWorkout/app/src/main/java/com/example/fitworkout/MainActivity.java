@@ -2,20 +2,22 @@ package com.example.fitworkout;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import com.example.fitworkout.vistas.FragmentCalendar;
-import com.example.fitworkout.vistas.FragmentHistory;
-import com.example.fitworkout.vistas.FragmentHome;
+import com.example.fitworkout.views.FragmentCalendar;
+import com.example.fitworkout.views.FragmentHistory;
+import com.example.fitworkout.views.FragmentHome;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
 
-    BottomNavigationView bottomNavigationView;
+    private BottomNavigationView bottomNavigationView;
     private FragmentManager fragmentManager;
 
     @Override

@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Fit Workout</string>
+
+    <!-- Bottom Navigation Bar -->
+    <string name="bottom_nav_calendario">Calendário</string>
+    <string name="bottom_nav_home">Home</string>
+    <string name="bottom_nav_historico">Histórico</string>
+
+    <!-- Side Navigation Drawer -->
+    <string name="side_nav_mudar_de_conta">Mudar de Conta</string>
+    <string name="side_nav_btn_personal_trainer">Personal Trainer</string>
+    <string name="side_nav_opcoes">Opções</string>
+    <string name="side_nav_encomendas">Encomendas</string>
+    <string name="side_nav_exercicios">Exercícios</string>
+    <string name="side_nav_personal_trainer">Personal Trainer</string>
 </resources>
