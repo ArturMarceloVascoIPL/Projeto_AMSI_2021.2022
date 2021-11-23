@@ -1,26 +1,22 @@
-package com.example.myapplication;
+package com.example.fitworkout;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import com.example.myapplication.vistas.FragmentCalendar;
-import com.example.myapplication.vistas.FragmentHistory;
-import com.example.myapplication.vistas.FragmentHome;
+import com.example.fitworkout.vistas.FragmentCalendar;
+import com.example.fitworkout.vistas.FragmentHistory;
+import com.example.fitworkout.vistas.FragmentHome;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
 
     BottomNavigationView bottomNavigationView;
-
-    /**
-     * Instanciar os Fragmentos
-     */
-    FragmentHome fragmentHome = new FragmentHome();
-    FragmentCalendar fragmentCalendar = new FragmentCalendar();
-    FragmentHistory fragmentHistory = new FragmentHistory();
+    private FragmentManager fragmentManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,27 +24,32 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         setContentView(R.layout.activity_main);
 
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
+        fragmentManager = getSupportFragmentManager();
 
+        // Apresentar a página Home por defeito
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
         bottomNavigationView.setSelectedItemId(R.id.bottom_nav_home);
     }
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        Fragment fragment = null;
 
         switch (item.getItemId()) {
             case R.id.bottom_nav_calendar:
-                getSupportFragmentManager().beginTransaction().replace(R.id.container, fragmentCalendar).commit();
-                return true;
-
+                fragment = new FragmentCalendar();
+                break;
             case R.id.bottom_nav_home:
-                getSupportFragmentManager().beginTransaction().replace(R.id.container, fragmentHome).commit();
-                return true;
-
+                fragment = new FragmentHome();
+                break;
             case R.id.bottom_nav_history:
-                getSupportFragmentManager().beginTransaction().replace(R.id.container, fragmentHistory).commit();
-                return true;
+                fragment = new FragmentHistory();
+                break;
         }
-        return false;
+
+        if (fragment != null)
+            fragmentManager.beginTransaction().replace(R.id.flFragment, fragment).commit();
+
+        return true;
     }
 }

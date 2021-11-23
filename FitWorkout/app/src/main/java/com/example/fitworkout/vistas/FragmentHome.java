@@ -1,4 +1,4 @@
-package com.example.myapplication.vistas;
+package com.example.fitworkout.vistas;
 
 import android.os.Bundle;
 
@@ -8,7 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.myapplication.R;
+import com.example.fitworkout.R;
 
 public class FragmentHome extends Fragment {
 
