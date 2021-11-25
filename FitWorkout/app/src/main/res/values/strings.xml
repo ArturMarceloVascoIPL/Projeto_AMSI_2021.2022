@@ -13,6 +13,6 @@
     <string name="side_nav_encomendas">Encomendas</string>
     <string name="side_nav_exercicios">Exercícios</string>
     <string name="side_nav_personal_trainer">Personal Trainer</string>
-    <string name="start">Start</string>
+    <string name="open">Open</string>
     <string name="close">Close</string>
 </resources>
