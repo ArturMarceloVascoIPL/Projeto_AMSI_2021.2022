@@ -11,16 +11,21 @@
         android:theme="@style/Theme.FitWorkout">
 
         <activity
-            android:name="com.example.fitworkout.MainActivity"
-            android:theme="@style/Theme.FitWorkout.NoActionBar"
-            android:exported="true">
+            android:name=".views.ActivitySettings"
+            android:exported="false"
+            android:parentActivityName=".views.MainMenuActivity"
+            android:theme="@style/Theme.FitWorkout.NoActionBar" />
+
+        <activity
+            android:name=".views.MainMenuActivity"
+            android:exported="true"
+            android:theme="@style/Theme.FitWorkout.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>

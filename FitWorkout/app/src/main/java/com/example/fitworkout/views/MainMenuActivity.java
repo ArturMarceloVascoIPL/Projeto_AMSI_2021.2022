@@ -1,54 +1,27 @@
-package com.example.fitworkout;
+package com.example.fitworkout.views;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
-import android.os.Bundle;
-import android.view.MenuItem;
-
-import com.example.fitworkout.views.FragmentCalendar;
-import com.example.fitworkout.views.FragmentHistory;
-import com.example.fitworkout.views.FragmentHome;
+import com.example.fitworkout.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.navigation.NavigationView;
 
-import java.util.Objects;
-
-public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener, NavigationView.OnNavigationItemSelectedListener {
+public class MainMenuActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
 
     private BottomNavigationView bottomNavigationView;
     private FragmentManager fragmentManager;
-
-    private DrawerLayout drawerLayout;
-    private NavigationView navigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        Toolbar toolbar = findViewById(R.id.toolbar);
-
-        setSupportActionBar(toolbar);
-        drawerLayout = findViewById(R.id.navigationDrawer);
-        navigationView = findViewById(R.id.navigationView);
-
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this,
-                drawerLayout,
-                toolbar,
-                R.string.open,
-                R.string.close);
-        
-        toggle.syncState();
-        
-        drawerLayout.addDrawerListener(toggle);
-        carregarCabecalho();
 
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
         fragmentManager = getSupportFragmentManager();
@@ -59,8 +32,24 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         bottomNavigationView.setSelectedItemId(R.id.bottom_nav_home);
     }
 
-    private void carregarCabecalho() {
-        //TODO: Fazer método(ver na ficha da aula)
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_settings, menu);
+
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.appbarItemSettings:
+                Intent intent = new Intent(this, ActivitySettings.class);
+
+                startActivity(intent);
+                return true;
+        }
+
+        return false;
     }
 
     @Override
