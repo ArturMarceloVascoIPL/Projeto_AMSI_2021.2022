@@ -14,12 +14,11 @@
             android:name=".views.ActivitySettings"
             android:exported="false"
             android:parentActivityName=".views.MainMenuActivity"
-            android:theme="@style/Theme.FitWorkout.NoActionBar" />
+            android:label="Definições"/>
 
         <activity
             android:name=".views.MainMenuActivity"
-            android:exported="true"
-            android:theme="@style/Theme.FitWorkout.NoActionBar">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

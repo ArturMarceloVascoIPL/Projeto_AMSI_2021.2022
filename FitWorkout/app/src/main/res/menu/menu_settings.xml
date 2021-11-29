@@ -6,7 +6,6 @@
         android:id="@+id/appbarItemSettings"
         android:icon="@drawable/app_bar_settings"
         android:title="Settings"
-        app:actionViewClass="android.widget.Button"
         app:showAsAction="always" />
 
 </menu>
