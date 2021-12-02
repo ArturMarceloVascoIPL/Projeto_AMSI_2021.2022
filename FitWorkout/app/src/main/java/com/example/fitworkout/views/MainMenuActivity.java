@@ -34,19 +34,36 @@ public class MainMenuActivity extends AppCompatActivity implements BottomNavigat
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_settings, menu);
+        getMenuInflater().inflate(R.menu.menu_appbar, menu);
 
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        Intent intent = null;
+
         switch (item.getItemId()) {
             case R.id.appbarItemSettings:
-                Intent intent = new Intent(this, ActivitySettings.class);
+                intent = new Intent(this, ActivitySettings.class);
+                break;
 
-                startActivity(intent);
-                return true;
+            case R.id.appbarItemChangeAccount:
+                break;
+
+            case R.id.appbarItemOrders:
+                break;
+
+            case R.id.appbarItemExercises:
+                break;
+
+            case R.id.appbarItemFeedback:
+                break;
+        }
+
+        if (intent != null) {
+            startActivity(intent);
+            return true;
         }
 
         return false;
