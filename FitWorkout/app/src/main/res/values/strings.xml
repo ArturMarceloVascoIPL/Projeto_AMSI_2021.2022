@@ -13,4 +13,19 @@
     <string name="appbar_exercicios">Exercícios</string>
     <string name="appbar_chat">Chat</string>
 
+    <!--  Login Activity  -->
+    <string name="login_tv_login">Login</string>
+    <string name="login_tv_username">Username</string>
+    <string name="login_tv_password">Password</string>
+    <string name="login_btn_to_register">Don\'t have an Account? Sign up.</string>
+    <string name="login_btn_login">Login</string>
+
+    <!--  Register Activity  -->
+    <string name="register_tv_register">Register</string>
+    <string name="register_tv_email">Email</string>
+    <string name="register_tv_username">Username</string>
+    <string name="register_tv_password">Password</string>
+    <string name="register_tv_confirm_password">Confirm Password</string>
+    <string name="register_btn_to_login">Already have an Account? Sign in.</string>
+    <string name="register_btn_register">Register</string>
 </resources>
