@@ -11,6 +11,6 @@
     <string name="appbar_change_account">Change Account</string>
     <string name="appbar_encomendas">Encomendas</string>
     <string name="appbar_exercicios">Exercícios</string>
-    <string name="appbar_feedback">Feedback</string>
-    
+    <string name="appbar_chat">Chat</string>
+
 </resources>

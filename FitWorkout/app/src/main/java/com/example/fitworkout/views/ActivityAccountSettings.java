@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.example.fitworkout.R;
 
-public class ActivitySettings extends AppCompatActivity {
+public class ActivityAccountSettings extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_settings);
+        setContentView(R.layout.activity_account_settings);
     }
 }

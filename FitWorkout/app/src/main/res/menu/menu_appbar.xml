@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/appbarItemSettings"
-        android:icon="@drawable/app_bar_settings"
+        android:id="@+id/appbarItemAccSettings"
+        android:icon="@drawable/nav_action_definicoes"
         android:title="@string/appbar_settings"
         app:showAsAction="always" />
 
@@ -25,8 +25,8 @@
         android:title="@string/appbar_exercicios" />
 
     <item
-        android:id="@+id/appbarItemFeedback"
+        android:id="@+id/appbarItemChat"
         android:icon="@drawable/nav_action_pt_chat"
-        android:title="@string/appbar_feedback" />
+        android:title="@string/appbar_chat" />
 
 </menu>

@@ -9,13 +9,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FitWorkout">
-
         <activity
-            android:name=".views.ActivitySettings"
+            android:name=".views.ActivityChat"
             android:exported="false"
-            android:parentActivityName=".views.MainMenuActivity"
-            android:label="Definições"/>
-
+            android:label="Chat"
+            android:parentActivityName=".views.MainMenuActivity" />
+        <activity
+            android:name=".views.ActivityExercises"
+            android:exported="false"
+            android:label="Lista de Exercicios"
+            android:parentActivityName=".views.MainMenuActivity" />
+        <activity
+            android:name=".views.ActivityOrders"
+            android:exported="false"
+            android:label="Encomendas"
+            android:parentActivityName=".views.MainMenuActivity" />
+        <activity
+            android:name=".views.ActivityAccountSettings"
+            android:exported="false"
+            android:label="Definições"
+            android:parentActivityName=".views.MainMenuActivity" />
         <activity
             android:name=".views.MainMenuActivity"
             android:exported="true">
