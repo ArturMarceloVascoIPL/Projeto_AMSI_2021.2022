@@ -15,6 +15,7 @@
 
 Changelog:
 
-Menus de Navegação (Cliente) preparados;
+- Merge dos *Branch's*; <u>*Branch* Main está agora a par com tudo das *branch's*.</u>
 
-Ações dos botões criados.
+- Interface do Login e Registo implementadas;
+- Menus de Navegação (Cliente) implementados;
