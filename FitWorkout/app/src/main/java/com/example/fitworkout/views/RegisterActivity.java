@@ -1,15 +1,16 @@
-package com.example.myapplication.views;
+package com.example.fitworkout.views;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.EditText;
 
-import com.example.myapplication.MainActivity;
-import com.example.myapplication.R;
+import com.example.fitworkout.views.MainMenuActivity;
+import com.example.fitworkout.R;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -28,13 +29,14 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     /**
-     * Validações do Email, Username, Password e Confirmação
+     * Validações
      */
+    //region Validações
 
     /* Verifica se o Email é válido */
     private boolean isEmailValido(String email) {
         // TODO: Complementar melhor a verificacao do email
-        if (email == null)
+        if (TextUtils.isEmpty(email))
             return false;
 
         return Patterns.EMAIL_ADDRESS.matcher(email).matches();
@@ -43,16 +45,16 @@ public class RegisterActivity extends AppCompatActivity {
     /* Verifica se o Username é válido */
     private boolean isUsernameValido(String username) {
         // TODO: Complementar melhor a verificacao do username
-        if (username == null)
-            return true;
+        if (TextUtils.isEmpty(username))
+            return false;
 
-        return false;
+        return true;
     }
 
     /* Verifica se a Password é válida */
     private boolean isPasswordValida(String password) {
         // TODO: Complementar melhor a verificacao da password
-        if (password == null)
+        if (TextUtils.isEmpty(password))
             return false;
 
         return (password.length() >= PASSWORD_LENGHT);
@@ -61,11 +63,13 @@ public class RegisterActivity extends AppCompatActivity {
     /* Verifica se a Password é válida */
     private boolean isConfirmacaoValida(String confirmacao, String password) {
         // TODO: Complementar melhor a verificacao da confirmação de password
-        if (confirmacao == null)
+        if (TextUtils.isEmpty(confirmacao))
             return false;
 
         return (confirmacao.equals(password));
     }
+
+    //endregion
 
     /**
      * Funções de Click
@@ -99,8 +103,7 @@ public class RegisterActivity extends AppCompatActivity {
         }
 
         // Prepara a atividade
-        Intent intent = new Intent(this, MainActivity.class);
-        intent.putExtra("EMAIL", email);
+        Intent intent = new Intent(this, MainMenuActivity.class);
 
         // Inicia a atividade e fecha esta
         startActivity(intent);

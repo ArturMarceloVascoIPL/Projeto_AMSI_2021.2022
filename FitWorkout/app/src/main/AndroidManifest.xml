@@ -9,16 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FitWorkout">
-        <activity
-            android:name=".MainActivity"
-            android:exported="true" />
 
         <activity
-            android:name=".views.RegisterActivity"
-            android:exported="false" />
-
-        <activity
-            android:name=".views.LoginActivity"
             android:name=".views.ActivityChat"
             android:exported="false"
             android:label="Chat"
@@ -38,8 +30,13 @@
             android:exported="false"
             android:label="Definições"
             android:parentActivityName=".views.MainMenuActivity" />
+
         <activity
-            android:name=".views.MainMenuActivity"
+            android:name=".views.RegisterActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".views.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -47,6 +44,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".views.MainMenuActivity"
+            android:exported="false" />
 
     </application>
 

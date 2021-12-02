@@ -1,15 +1,15 @@
-package com.example.myapplication.views;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.fitworkout.views;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Patterns;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
 
-import com.example.myapplication.MainActivity;
-import com.example.myapplication.R;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.fitworkout.views.MainMenuActivity;
+import com.example.fitworkout.R;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -31,7 +31,7 @@ public class LoginActivity extends AppCompatActivity {
     /* Verifica se o username é valido */
     private boolean isUsernameValida(String username) {
         // TODO: Implementar verificacao do username
-        if (username == null)
+        if (TextUtils.isEmpty(username))
             return false;
 
         return true;
@@ -39,7 +39,7 @@ public class LoginActivity extends AppCompatActivity {
 
     /* Verifica se a Password é válida */
     private boolean isPasswordValida(String password) {
-        if (password == null)
+        if (TextUtils.isEmpty(password))
             return false;
 
         return password.length() >= 8;
@@ -48,7 +48,6 @@ public class LoginActivity extends AppCompatActivity {
     /**
      * Funções de Click
      */
-
     /* Função de Click no Login */
     public void onClickLogin(View view) {
         String username = etUsername.getText().toString();
@@ -65,7 +64,7 @@ public class LoginActivity extends AppCompatActivity {
         }
 
         // Prepara a atividade
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, MainMenuActivity.class);
         intent.putExtra("USERNAME", username);
 
         // Inicia a atividade e fecha esta
