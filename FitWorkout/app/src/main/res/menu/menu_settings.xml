@@ -5,7 +5,28 @@
     <item
         android:id="@+id/appbarItemSettings"
         android:icon="@drawable/app_bar_settings"
-        android:title="Settings"
+        android:title="@string/appbar_settings"
         app:showAsAction="always" />
+
+    <item
+        android:id="@+id/appbarItemChangeAccount"
+        android:icon="@drawable/nav_action_switch_acc"
+        android:title="@string/appbar_change_account"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/appbarItemOrders"
+        android:icon="@drawable/nav_action_encomendas"
+        android:title="@string/appbar_encomendas" />
+
+    <item
+        android:id="@+id/appbarItemExercises"
+        android:icon="@drawable/nav_action_exercicios"
+        android:title="@string/appbar_exercicios" />
+
+    <item
+        android:id="@+id/appbarItemFeedback"
+        android:icon="@drawable/nav_action_pt_chat"
+        android:title="@string/appbar_feedback" />
 
 </menu>

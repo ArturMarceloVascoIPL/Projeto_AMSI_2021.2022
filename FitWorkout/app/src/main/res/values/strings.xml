@@ -6,13 +6,11 @@
     <string name="bottom_nav_home">Home</string>
     <string name="bottom_nav_historico">Histórico</string>
 
-    <!-- Side Navigation Drawer -->
-    <string name="side_nav_mudar_de_conta">Mudar de Conta</string>
-    <string name="side_nav_btn_personal_trainer">Personal Trainer</string>
-    <string name="side_nav_opcoes">Opções</string>
-    <string name="side_nav_encomendas">Encomendas</string>
-    <string name="side_nav_exercicios">Exercícios</string>
-    <string name="side_nav_personal_trainer">Personal Trainer</string>
-    <string name="open">Open</string>
-    <string name="close">Close</string>
+    <!-- App Bar Navigation -->
+    <string name="appbar_settings">Settings</string>
+    <string name="appbar_change_account">Change Account</string>
+    <string name="appbar_encomendas">Encomendas</string>
+    <string name="appbar_exercicios">Exercícios</string>
+    <string name="appbar_feedback">Feedback</string>
+    
 </resources>
