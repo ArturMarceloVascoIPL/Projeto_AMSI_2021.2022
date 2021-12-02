@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/appbarItemAccSettings"
+        android:icon="@drawable/nav_action_definicoes"
+        android:title="@string/appbar_settings"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/appbarItemChangeAccount"
+        android:icon="@drawable/nav_action_switch_acc"
+        android:title="@string/appbar_change_account"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/appbarItemOrders"
+        android:icon="@drawable/nav_action_encomendas"
+        android:title="@string/appbar_encomendas" />
+
+    <item
+        android:id="@+id/appbarItemExercises"
+        android:icon="@drawable/nav_action_exercicios"
+        android:title="@string/appbar_exercicios" />
+
+    <item
+        android:id="@+id/appbarItemChat"
+        android:icon="@drawable/nav_action_pt_chat"
+        android:title="@string/appbar_chat" />
+
+</menu>
