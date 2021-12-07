@@ -43,6 +43,9 @@ public class FragmentCalendar extends Fragment {
         // Instanciar 'Calendar' com a data
         curDate = Calendar.getInstance();
 
+        // Apresentar a data atual
+        tvDate.setText(getString(R.string.calendar_date, curDate.get(Calendar.DAY_OF_MONTH), curDate.get(Calendar.MONTH) + 1, curDate.get(Calendar.YEAR)));
+
         // Criar um conjunto de DateData
         DateData dateData1 = new DateData(curDate.get(Calendar.YEAR), curDate.get(Calendar.MONTH) + 1, 1);
         DateData dateData2 = new DateData(curDate.get(Calendar.YEAR), curDate.get(Calendar.MONTH) + 1, 2);
