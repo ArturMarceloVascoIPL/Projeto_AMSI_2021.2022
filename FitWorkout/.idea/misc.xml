@@ -6,16 +6,15 @@
         <entry key="..\:/Projeto_AMSI_2021.2022/FitWorkout/app/src/main/res/layout/activity_account_settings.xml" value="0.36666666666666664" />
         <entry key="..\:/Projeto_AMSI_2021.2022/FitWorkout/app/src/main/res/layout/activity_chat.xml" value="0.36666666666666664" />
         <entry key="..\:/Projeto_AMSI_2021.2022/FitWorkout/app/src/main/res/layout/activity_exercises.xml" value="0.35260416666666666" />
+        <entry key="..\:/Projeto_AMSI_2021.2022/FitWorkout/app/src/main/res/layout/activity_login.xml" value="0.36666666666666664" />
         <entry key="..\:/Projeto_AMSI_2021.2022/FitWorkout/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Projeto_AMSI_2021.2022/FitWorkout/app/src/main/res/layout/activity_main_menu.xml" value="0.36666666666666664" />
         <entry key="..\:/Projeto_AMSI_2021.2022/FitWorkout/app/src/main/res/layout/activity_orders.xml" value="0.36666666666666664" />
         <entry key="..\:/Projeto_AMSI_2021.2022/FitWorkout/app/src/main/res/layout/activity_personal_trainer_main_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Projeto_AMSI_2021.2022/FitWorkout/app/src/main/res/layout/activity_register.xml" value="0.36666666666666664" />
         <entry key="..\:/Projeto_AMSI_2021.2022/FitWorkout/app/src/main/res/layout/activity_settings.xml" value="0.36666666666666664" />
         <entry key="..\:/Projeto_AMSI_2021.2022/FitWorkout/app/src/main/res/layout/app_bar_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Projeto_AMSI_2021.2022/FitWorkout/app/src/main/res/layout/drawer_header_main.xml" value="0.36666666666666664" />
-        <entry key="..\:/Projeto_AMSI_2021.2022/FitWorkout/app/src/main/res/layout/activity_login.xml" value="0.36666666666666664" />
-        <entry key="..\:/Projeto_AMSI_2021.2022/FitWorkout/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
-        <entry key="..\:/Projeto_AMSI_2021.2022/FitWorkout/app/src/main/res/layout/activity_register.xml" value="0.36666666666666664" />
         <entry key="..\:/Projeto_AMSI_2021.2022/FitWorkout/app/src/main/res/layout/fragment_calendar.xml" value="0.36666666666666664" />
         <entry key="..\:/Projeto_AMSI_2021.2022/FitWorkout/app/src/main/res/layout/fragment_history.xml" value="0.36666666666666664" />
         <entry key="..\:/Projeto_AMSI_2021.2022/FitWorkout/app/src/main/res/layout/fragment_home.xml" value="0.36666666666666664" />
@@ -25,17 +24,21 @@
         <entry key="..\:/Projeto_AMSI_2021.2022/FitWorkout/app/src/main/res/menu/menu_settings.xml" value="0.36666666666666664" />
         <entry key="..\:/Projeto_AMSI_2021.2022/FitWorkout/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3828125" />
         <entry key="..\:/Users/2200426/Desktop/Projeto_AMSI_2021.2022/FitWorkout/app/src/main/res/drawable/ic_launcher_background.xml" value="0.275" />
+        <entry key="..\:/Users/2200426/Desktop/Projeto_AMSI_2021.2022/FitWorkout/app/src/main/res/layout/activity_login.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/2200426/Desktop/Projeto_AMSI_2021.2022/FitWorkout/app/src/main/res/layout/activity_main.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/2200426/Desktop/Projeto_AMSI_2021.2022/FitWorkout/app/src/main/res/layout/activity_main_menu.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/2200426/Desktop/Projeto_AMSI_2021.2022/FitWorkout/app/src/main/res/layout/activity_settings.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/2200426/Desktop/Projeto_AMSI_2021.2022/FitWorkout/app/src/main/res/layout/app_bar_main.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/2200426/Desktop/Projeto_AMSI_2021.2022/FitWorkout/app/src/main/res/layout/drawer_header_main.xml" value="0.27291666666666664" />
-        <entry key="..\:/Users/2200426/Desktop/Projeto_AMSI_2021.2022/FitWorkout/app/src/main/res/layout/fragment_calendar.xml" value="0.14270833333333333" />
+        <entry key="..\:/Users/2200426/Desktop/Projeto_AMSI_2021.2022/FitWorkout/app/src/main/res/layout/fragment_calendar.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/2200426/Desktop/Projeto_AMSI_2021.2022/FitWorkout/app/src/main/res/layout/fragment_history.xml" value="0.14270833333333333" />
         <entry key="..\:/Users/2200426/Desktop/Projeto_AMSI_2021.2022/FitWorkout/app/src/main/res/layout/fragment_home.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/2200426/Desktop/Projeto_AMSI_2021.2022/FitWorkout/app/src/main/res/layout/item_list_plan.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/2200426/Desktop/Projeto_AMSI_2021.2022/FitWorkout/app/src/main/res/layout/item_list_workout.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/2200426/Desktop/Projeto_AMSI_2021.2022/FitWorkout/app/src/main/res/layout/switch_item.xml" value="0.14270833333333333" />
         <entry key="..\:/Users/2200426/Desktop/Projeto_AMSI_2021.2022/FitWorkout/app/src/main/res/menu/activity_main_drawer.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/2200426/Desktop/Projeto_AMSI_2021.2022/FitWorkout/app/src/main/res/menu/bottom_nav_menu.xml" value="0.14270833333333333" />
+        <entry key="..\:/Users/2200426/Desktop/Projeto_AMSI_2021.2022/FitWorkout/app/src/main/res/menu/menu_appbar.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/2200426/Desktop/Projeto_AMSI_2021.2022/FitWorkout/app/src/main/res/menu/menu_settings.xml" value="0.27291666666666664" />
       </map>
     </option>
