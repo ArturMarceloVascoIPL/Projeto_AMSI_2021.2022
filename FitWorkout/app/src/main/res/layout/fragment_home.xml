@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingVertical="10dp"
-        android:text="Lista de Treinos"
+        android:text="@string/home_lista_de_treinos"
         android:textAlignment="center"
         android:textSize="20sp" />
 

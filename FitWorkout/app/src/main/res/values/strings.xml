@@ -28,4 +28,7 @@
     <string name="register_tv_confirm_password">Confirm Password</string>
     <string name="register_btn_to_login">Already have an Account? Sign in.</string>
     <string name="register_btn_register">Register</string>
+
+    <!-- Home Fragment -->
+    <string name="home_lista_de_treinos">Lista de Treinos</string>
 </resources>
