@@ -74,15 +74,43 @@ public class WorkoutBDHelper extends SQLiteOpenHelper {
 
         if (cursor.moveToFirst()) {
             do {
-                //TODO: Acabar o CRUD
-                //Workout workout = new Workout(cursor.getInt(0), cursor.getInt(1), cursor.getString(2), cursor.getString(3), cursor.getString(4), cursor.getString(5));
-            }
+                Workout workout = new Workout(cursor.getInt(0), cursor.getInt(1), cursor.getInt(2), cursor.getString(3), cursor.getString(4));
+                workoutArrayList.add(workout);
+            } while (cursor.moveToNext());
         }
+
+        return workoutArrayList;
     }
 
-    /** UPDATE */
+    /**
+     * UPDATE
+     */
+    public boolean editWorkout(Workout workout) {
+        ContentValues values = new ContentValues();
 
-    /** DELETE */
+        values.put(ID, workout.getId());
+        values.put(NAME, workout.getName());
+        values.put(DATE, workout.getDate());
+        values.put(CALORIES_BURNED, workout.getCaloriesBurned());
+        values.put(PTID, workout.getPtId());
+
+        long nLinhas = db.update(DB_TABLE, values, ID + "= ?", new String[]{workout.getId() + ""});
+
+        return (nLinhas > 0);
+    }
+
+    /**
+     * DELETE
+     */
+    public boolean deleteWorkout(int id) {
+        long nLinhas = db.delete(DB_TABLE, ID + "= ?", new String[]{id + ""});
+
+        return (nLinhas > 0);
+    }
+
+    public void deleteAllWorkouts() {
+        db.delete(DB_TABLE, null, null);
+    }
 
     //endregion
 }
