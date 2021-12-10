@@ -21,6 +21,8 @@ public class MainMenuActivity extends AppCompatActivity implements BottomNavigat
     private BottomNavigationView bottomNavigationView;
     private FragmentManager fragmentManager;
 
+    Menu optionsMenu;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,11 +39,13 @@ public class MainMenuActivity extends AppCompatActivity implements BottomNavigat
 
     //region App Bar Navigation
 
-    //
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_appbar, menu);
-
+        /*  TODO  :  Find Role user and check if PT == TRUE
+        optionsMenu = menu;
+        MenuItem item = optionsMenu.findItem(R.id.appbarItemChangeAccount);
+        item.setVisible(false); */
         return true;
     }
 
