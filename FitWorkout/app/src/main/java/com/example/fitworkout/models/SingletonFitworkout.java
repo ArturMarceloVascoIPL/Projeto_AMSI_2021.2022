@@ -20,6 +20,8 @@ public class SingletonFitworkout {
     public SingletonFitworkout(Context context) {
         workoutArrayList = new ArrayList<>();
         workoutBD = new WorkoutBDHelper(context);
+
+        generateTestData();
     }
 
     public static synchronized SingletonFitworkout getInstance(Context context) {
@@ -29,10 +31,6 @@ public class SingletonFitworkout {
         }
         return instance;
     }
-
-    /**
-     * Acesso á BD Local
-     */
 
     private Workout getWorkout(int id) {
         for (Workout workout : workoutArrayList) {
@@ -44,6 +42,9 @@ public class SingletonFitworkout {
         return null;
     }
 
+    /**
+     * Acesso á BD Local
+     */
     //region Acesso BD Local
     public ArrayList<Workout> getWorkoutsBD() {
         workoutArrayList = workoutBD.getAllWorkout();
@@ -83,6 +84,13 @@ public class SingletonFitworkout {
         }
     }
     //endregion
+
+    public void generateTestData() {
+        Workout workout = new Workout(1, 300, 1, "Enche o Peito", null);
+        Workout workout2 = new Workout(1, 255, 1, "Enche as Pernas", null);
+        workoutBD.addWorkout(workout);
+        workoutBD.addWorkout(workout2);
+    }
 
     /**
      * Acesso á API
