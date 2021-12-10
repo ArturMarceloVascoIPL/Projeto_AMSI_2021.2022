@@ -1,5 +1,4 @@
-package com.example.fitworkout.views;
-
+package com.example.fitworkout.views.client;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;

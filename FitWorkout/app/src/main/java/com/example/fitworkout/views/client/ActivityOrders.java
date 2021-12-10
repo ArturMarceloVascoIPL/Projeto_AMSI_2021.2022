@@ -1,17 +1,16 @@
-package com.example.fitworkout.views;
+package com.example.fitworkout.views.client;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.widget.TextView;
 
 import com.example.fitworkout.R;
 
-public class ActivityChat extends AppCompatActivity {
+public class ActivityOrders extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_chat);
+        setContentView(R.layout.activity_orders);
     }
 }

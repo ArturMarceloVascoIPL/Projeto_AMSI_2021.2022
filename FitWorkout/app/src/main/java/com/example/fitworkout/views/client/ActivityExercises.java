@@ -1,4 +1,4 @@
-package com.example.fitworkout.views;
+package com.example.fitworkout.views.client;
 
 import androidx.appcompat.app.AppCompatActivity;
 
