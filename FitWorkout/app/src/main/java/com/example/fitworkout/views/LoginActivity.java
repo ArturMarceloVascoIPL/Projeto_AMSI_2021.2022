@@ -8,8 +8,8 @@ import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.fitworkout.views.MainMenuActivity;
 import com.example.fitworkout.R;
+import com.example.fitworkout.views.client.MainMenuActivity;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -27,14 +27,12 @@ public class LoginActivity extends AppCompatActivity {
     /**
      * Validações do Username e Password
      */
+    //region Validações
 
     /* Verifica se o username é valido */
     private boolean isUsernameValida(String username) {
         // TODO: Implementar verificacao do username
-        if (TextUtils.isEmpty(username))
-            return false;
-
-        return true;
+        return !TextUtils.isEmpty(username);
     }
 
     /* Verifica se a Password é válida */
@@ -45,9 +43,13 @@ public class LoginActivity extends AppCompatActivity {
         return password.length() >= 8;
     }
 
+    //endregion
+
     /**
      * Funções de Click
      */
+    //region Funções Click
+
     /* Função de Click no Login */
     public void onClickLogin(View view) {
         String username = etUsername.getText().toString();
@@ -81,4 +83,6 @@ public class LoginActivity extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
+
+    //endregion
 }

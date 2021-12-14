@@ -1,7 +1,5 @@
 package com.example.fitworkout.views;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -9,8 +7,10 @@ import android.util.Patterns;
 import android.view.View;
 import android.widget.EditText;
 
-import com.example.fitworkout.views.MainMenuActivity;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.fitworkout.R;
+import com.example.fitworkout.views.client.MainMenuActivity;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -29,13 +29,13 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     /**
-     * Validações
+     * Validações dos Campos
      */
     //region Validações
 
+    // TODO: Complementar melhor as Validações
     /* Verifica se o Email é válido */
     private boolean isEmailValido(String email) {
-        // TODO: Complementar melhor a verificacao do email
         if (TextUtils.isEmpty(email))
             return false;
 
@@ -44,16 +44,11 @@ public class RegisterActivity extends AppCompatActivity {
 
     /* Verifica se o Username é válido */
     private boolean isUsernameValido(String username) {
-        // TODO: Complementar melhor a verificacao do username
-        if (TextUtils.isEmpty(username))
-            return false;
-
-        return true;
+        return !TextUtils.isEmpty(username);
     }
 
     /* Verifica se a Password é válida */
     private boolean isPasswordValida(String password) {
-        // TODO: Complementar melhor a verificacao da password
         if (TextUtils.isEmpty(password))
             return false;
 
@@ -62,7 +57,6 @@ public class RegisterActivity extends AppCompatActivity {
 
     /* Verifica se a Password é válida */
     private boolean isConfirmacaoValida(String confirmacao, String password) {
-        // TODO: Complementar melhor a verificacao da confirmação de password
         if (TextUtils.isEmpty(confirmacao))
             return false;
 
@@ -74,6 +68,7 @@ public class RegisterActivity extends AppCompatActivity {
     /**
      * Funções de Click
      */
+    //region Funções Click
 
     /* Função de Click no Registo */
     public void onClickRegister(View view) {
@@ -119,4 +114,6 @@ public class RegisterActivity extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
+
+    //endregion
 }
