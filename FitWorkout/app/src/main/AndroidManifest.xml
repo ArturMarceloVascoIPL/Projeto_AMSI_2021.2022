@@ -11,25 +11,29 @@
         android:theme="@style/Theme.FitWorkout">
 
         <activity
-            android:name=".views.ActivityChat"
+            android:name=".views.client.ActivityChat"
             android:exported="false"
             android:label="Chat"
-            android:parentActivityName=".views.MainMenuActivity" />
+            android:parentActivityName=".views.client.MainMenuActivity" />
         <activity
-            android:name=".views.ActivityExercises"
+            android:name=".views.client.ActivityExercises"
             android:exported="false"
             android:label="Lista de Exercicios"
-            android:parentActivityName=".views.MainMenuActivity" />
+            android:parentActivityName=".views.client.MainMenuActivity" />
         <activity
-            android:name=".views.ActivityOrders"
+            android:name=".views.client.ActivityOrders"
             android:exported="false"
             android:label="Encomendas"
-            android:parentActivityName=".views.MainMenuActivity" />
+            android:parentActivityName=".views.client.MainMenuActivity" />
         <activity
-            android:name=".views.ActivityAccountSettings"
+            android:name=".views.client.ActivityAccountSettings"
             android:exported="false"
             android:label="Definições"
-            android:parentActivityName=".views.MainMenuActivity" />
+            android:parentActivityName=".views.client.MainMenuActivity" />
+
+        <activity
+            android:name=".views.client.MainMenuActivity"
+            android:exported="false" />
 
         <activity
             android:name=".views.RegisterActivity"
@@ -44,10 +48,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity
-            android:name=".views.MainMenuActivity"
-            android:exported="false" />
 
     </application>
 
