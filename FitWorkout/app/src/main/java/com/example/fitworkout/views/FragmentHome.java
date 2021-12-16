@@ -34,7 +34,8 @@ public class FragmentHome extends Fragment {
 
         lvTreinos = view.findViewById(R.id.lvWorkoutList);
 
-        lvTreinos.setAdapter(new AdapterWorkoutList(getContext(), listaWorkouts));
+        if (listaWorkouts != null)
+            lvTreinos.setAdapter(new AdapterWorkoutList(getContext(), listaWorkouts));
 
         lvTreinos.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
