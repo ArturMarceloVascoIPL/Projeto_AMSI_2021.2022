@@ -28,11 +28,11 @@ public class WorkoutBDHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         String createTableWorkout = "CREATE TABLE " + DB_TABLE + " ( " +
-                ID + "INTEGER PRIMARY KEY, " +
-                NAME + "TEXT NOT NULL, " +
-                DATE + "TEXT, " +
-                CALORIES_BURNED + "INTEGER NOT NULL, " +
-                PTID + "INTEGER NOT NULL);";
+                ID + " INTEGER PRIMARY KEY, " +
+                NAME + " TEXT NOT NULL, " +
+                DATE + " TEXT, " +
+                CALORIES_BURNED + " INTEGER NOT NULL, " +
+                PTID + " INTEGER NOT NULL);";
 
         db.execSQL(createTableWorkout);
     }
@@ -74,7 +74,7 @@ public class WorkoutBDHelper extends SQLiteOpenHelper {
 
         if (cursor.moveToFirst()) {
             do {
-                Workout workout = new Workout(cursor.getInt(0), cursor.getInt(1), cursor.getInt(2), cursor.getString(3), cursor.getString(4));
+                Workout workout = new Workout(cursor.getInt(0), cursor.getString(3), cursor.getString(4), cursor.getInt(1), cursor.getInt(2));
                 workoutArrayList.add(workout);
             } while (cursor.moveToNext());
         }

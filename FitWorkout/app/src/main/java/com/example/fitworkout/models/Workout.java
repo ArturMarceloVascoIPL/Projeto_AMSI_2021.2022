@@ -6,7 +6,7 @@ public class Workout {
     private int id, caloriesBurned, ptId;
     private String name, date;
 
-    public Workout(int id, int caloriesBurned, int ptId, String name, String date) {
+    public Workout(int id, String name, String date, int caloriesBurned, int ptId) {
         this.id = id;
         this.caloriesBurned = caloriesBurned;
         this.ptId = ptId;

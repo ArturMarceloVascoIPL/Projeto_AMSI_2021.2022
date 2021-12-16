@@ -25,7 +25,7 @@ public class SingletonFitworkout {
     }
 
     public static synchronized SingletonFitworkout getInstance(Context context) {
-        if (instance != null) {
+        if (instance == null) {
             instance = new SingletonFitworkout(context);
             volleyQueue = Volley.newRequestQueue(context);
         }
@@ -86,10 +86,14 @@ public class SingletonFitworkout {
     //endregion
 
     public void generateTestData() {
-        Workout workout = new Workout(1, 300, 1, "Enche o Peito", null);
-        Workout workout2 = new Workout(1, 255, 1, "Enche as Pernas", null);
-        workoutBD.addWorkout(workout);
-        workoutBD.addWorkout(workout2);
+        ArrayList<Workout> workouts = new ArrayList<>();
+
+        workouts.add(new Workout(1, "Treina o Peito", null, 300, 1));
+        workouts.add(new Workout(2, "Treina as Pernas", null, 255, 1));
+        workouts.add(new Workout(3, "Aquecimentos", null, 100, 1));
+        workouts.add(new Workout(4, "Alongamentos", null, 200, 1));
+
+        addWorkoutsBD(workouts);
     }
 
     /**
