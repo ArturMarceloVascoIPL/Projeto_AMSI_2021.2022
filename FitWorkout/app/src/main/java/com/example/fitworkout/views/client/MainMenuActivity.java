@@ -1,4 +1,5 @@
 package com.example.fitworkout.views.client;
+
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;

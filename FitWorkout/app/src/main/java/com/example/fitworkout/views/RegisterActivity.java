@@ -9,7 +9,7 @@ import android.util.Patterns;
 import android.view.View;
 import android.widget.EditText;
 
-import com.example.fitworkout.views.MainMenuActivity;
+import com.example.fitworkout.views.client.MainMenuActivity;
 import com.example.fitworkout.R;
 
 public class RegisterActivity extends AppCompatActivity {
@@ -45,10 +45,7 @@ public class RegisterActivity extends AppCompatActivity {
     /* Verifica se o Username é válido */
     private boolean isUsernameValido(String username) {
         // TODO: Complementar melhor a verificacao do username
-        if (TextUtils.isEmpty(username))
-            return false;
-
-        return true;
+        return !TextUtils.isEmpty(username);
     }
 
     /* Verifica se a Password é válida */

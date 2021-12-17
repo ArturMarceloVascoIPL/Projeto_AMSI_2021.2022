@@ -52,7 +52,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:minHeight="50dp"
-        android:text="UsernameDefault" />
+        android:text="admin" />
     <!-- /Username -->
 
     <!-- Password -->
@@ -69,7 +69,7 @@
         android:ems="10"
         android:inputType="textPassword"
         android:minHeight="50dp"
-        android:text="PasswordDefault"
+        android:text="adminadmin"
         />
     <!-- /Password -->
 
