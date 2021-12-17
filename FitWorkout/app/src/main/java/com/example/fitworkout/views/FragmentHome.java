@@ -11,12 +11,13 @@ import androidx.fragment.app.Fragment;
 
 import com.example.fitworkout.R;
 import com.example.fitworkout.adapters.AdapterWorkoutList;
+import com.example.fitworkout.listeners.WorkoutsListener;
 import com.example.fitworkout.models.SingletonFitworkout;
 import com.example.fitworkout.models.Workout;
 
 import java.util.ArrayList;
 
-public class FragmentHome extends Fragment {
+public class FragmentHome extends Fragment implements WorkoutsListener {
 
     private ListView lvTreinos;
     private ArrayList<Workout> listaWorkouts;
@@ -32,10 +33,9 @@ public class FragmentHome extends Fragment {
 
         listaWorkouts = SingletonFitworkout.getInstance(getContext()).getWorkoutsBD();
 
-        lvTreinos = view.findViewById(R.id.lvWorkoutList);
+        SingletonFitworkout.getInstance(getContext()).setWorkoutsListener(this);
 
-        if (listaWorkouts != null)
-            lvTreinos.setAdapter(new AdapterWorkoutList(getContext(), listaWorkouts));
+        lvTreinos = view.findViewById(R.id.lvWorkoutList);
 
         lvTreinos.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -45,5 +45,11 @@ public class FragmentHome extends Fragment {
         });
 
         return view;
+    }
+
+    @Override
+    public void onRefreshListWorkouts(ArrayList<Workout> workoutArrayList) {
+        if (listaWorkouts != null)
+            lvTreinos.setAdapter(new AdapterWorkoutList(getContext(), listaWorkouts));
     }
 }

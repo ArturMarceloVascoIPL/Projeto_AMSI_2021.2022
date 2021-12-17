@@ -4,6 +4,7 @@ import android.content.Context;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
+import com.example.fitworkout.listeners.WorkoutsListener;
 
 import java.util.ArrayList;
 
@@ -16,6 +17,7 @@ public class SingletonFitworkout {
 
     private ArrayList<Workout> workoutArrayList;
     private WorkoutBDHelper workoutBD = null;
+    private WorkoutsListener workoutsListener;
 
     public SingletonFitworkout(Context context) {
         workoutArrayList = new ArrayList<>();
@@ -30,6 +32,10 @@ public class SingletonFitworkout {
             volleyQueue = Volley.newRequestQueue(context);
         }
         return instance;
+    }
+
+    public void setWorkoutsListener(WorkoutsListener workoutsListener) {
+        this.workoutsListener = workoutsListener;
     }
 
     private Workout getWorkout(int id) {
@@ -100,5 +106,8 @@ public class SingletonFitworkout {
      * Acesso á API
      */
     //region Acesso API
+    public void getAllWorkoutsAPI(final Context context){
+
+    }
     //endregion
 }
