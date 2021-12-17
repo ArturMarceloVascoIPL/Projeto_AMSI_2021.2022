@@ -14,9 +14,9 @@ import java.util.ArrayList;
 
 public class AdapterWorkoutList extends BaseAdapter {
 
-    private Context context;
+    private final Context context;
     private LayoutInflater inflater;
-    private ArrayList<Workout> workoutArrayList;
+    private final ArrayList<Workout> workoutArrayList;
 
     public AdapterWorkoutList(Context context, ArrayList<Workout> workoutArrayList) {
         this.context = context;
@@ -63,13 +63,13 @@ public class AdapterWorkoutList extends BaseAdapter {
         private final TextView tvCaloriesBurned;
 
         public ViewHolderList(View view) {
-            this.tvName = view.findViewById(R.id.tvWorkoutName);
-            this.tvCaloriesBurned = view.findViewById(R.id.tvWorkoutCalories);
+            tvName = view.findViewById(R.id.tvWorkoutName);
+            tvCaloriesBurned = view.findViewById(R.id.tvWorkoutCalories);
         }
 
         public void update(Workout workout) {
             tvName.setText(workout.getName());
-            tvCaloriesBurned.setText(workout.getCaloriesBurned());
+            tvCaloriesBurned.setText(workout.getCaloriesBurned() + "");
         }
     }
 }

@@ -74,7 +74,7 @@ public class WorkoutBDHelper extends SQLiteOpenHelper {
 
         if (cursor.moveToFirst()) {
             do {
-                Workout workout = new Workout(cursor.getInt(0), cursor.getString(3), cursor.getString(4), cursor.getInt(1), cursor.getInt(2));
+                Workout workout = new Workout(cursor.getInt(0), cursor.getString(1), cursor.getString(2), cursor.getInt(3), cursor.getInt(4));
                 workoutArrayList.add(workout);
             } while (cursor.moveToNext());
         }
