@@ -35,6 +35,7 @@ public class LoginActivity extends AppCompatActivity implements LoginListener {
     /**
      * Validações do Username e Password
      */
+    //region Validações
 
     /* Verifica se o username é valido */
     private boolean isUsernameValida(String username) {
@@ -49,9 +50,13 @@ public class LoginActivity extends AppCompatActivity implements LoginListener {
         return password.length() >= 8;
     }
 
+    //endregion
+
     /**
      * Funções de Click
      */
+    //region Funções Click
+
     /* Função de Click no Login */
     public void onClickLogin(View view) {
         String username = etUsername.getText().toString();
@@ -92,14 +97,5 @@ public class LoginActivity extends AppCompatActivity implements LoginListener {
         } else {
             Toast.makeText(getApplicationContext(), "Login inválido", Toast.LENGTH_SHORT).show();
         }
-    }
-
-    private void guardarInfoSharedPref(String token, String username) {
-        SharedPreferences sharedPrefeUser = getSharedPreferences(MainMenuActivity., Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = sharedPrefeUser.edit();
-
-        editor.putString(MainMenuActivity.USERNAME, username);
-        editor.putString(MainMenuActivity.TOKEN, token);
-        editor.apply();
     }
 }
